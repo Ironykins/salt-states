@@ -1,3 +1,7 @@
+# Deluge Salt States
+# Adapted from the official systemd tutorial here:
+# http://dev.deluge-torrent.org/wiki/UserGuide/Service/systemd
+
 deluge:
   user.present: 
     - home: /var/lib/deluge
@@ -23,6 +27,18 @@ deluge-web_pkg:
   file.managed:
     - source: salt://deluge/deluge-web.service
     - file_mode: 755
+
+/var/log/deluge:
+  file.directory:
+    - user: deluge
+    - group: deluge
+    - mode: 750
+
+/etc/logrotate.d/deluge:
+  file.managed:
+      - source: salt://deluge/deluge-logrotate
+      - user: deluge
+      - group: deluge
     
 deluged:
   service.running:

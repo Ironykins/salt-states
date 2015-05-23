@@ -1,5 +1,5 @@
 base:
-    server:
+    '*':
         - vim
         - figlet
         - git
@@ -8,7 +8,7 @@ base:
         - gcc
         - ghc
         - fortune
-        - motd
         - htop
+    server:
+        - motd
         - deluge
-

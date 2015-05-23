@@ -8,7 +8,7 @@ User=deluge
 Group=deluge
 UMask=007
 
-ExecStart=/usr/bin/deluged -d
+ExecStart=/usr/bin/deluged -d -l /var/log/deluge/daemon.log -L warning
 
 Restart=Always
 TimeoutStopSec=300
