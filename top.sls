@@ -9,6 +9,9 @@ base:
         - ghc
         - fortune
         - htop
+        - homeshick
+        - samba
+        - samba.config
     server:
         - motd
         - deluge
