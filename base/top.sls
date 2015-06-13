@@ -2,19 +2,19 @@ base:
     '*':
         - users
         - vim
-#        - ddate
-#        - figlet
-#        - git
-#        - subversion
-        #- cowsay
-#        - gcc
-#        - ghc
-#        - fortune
-#        - htop
-#        - homeshick
+        - ddate
+        - figlet
+        - git
+        - subversion
+        - cowsay
+        - gcc
+        - ghc
+        - fortune
+        - htop
+        - homeshick
+    server:
+        - motd
+        - deluge
         - samba_dirs
         - samba
         - samba.config
-    server:
-        - motd
-#        - deluge
