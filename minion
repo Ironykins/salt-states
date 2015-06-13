@@ -1,0 +1,13 @@
+master: localhost
+file_client: local
+id: server
+
+grains:
+    informal_name: "Vagrant Box" 
+
+file_roots:
+    base:
+        - /srv/salt/base
+        - /srv/salt/users-formula
+        - /srv/salt/samba-formula
+        
