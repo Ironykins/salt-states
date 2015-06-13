@@ -1,6 +1,6 @@
 {% for username, details in pillar['users'].iteritems() %}
 {% if 'homeshick_url' in details %}
-# TODO: Don't run this for users not present on the system. Use Jinja or something.
+{% if 'homeshick_reponame' in details %}
 
 install_{{username}}:
   git.latest:
@@ -40,5 +40,6 @@ link_{{username}}:
     - user: {{username}}
     - group: {{username}}
 
+{% endif %}
 {% endif %}
 {% endfor %}

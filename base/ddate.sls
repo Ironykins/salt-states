@@ -1,0 +1,3 @@
+ddate:
+    pkg.installed: []
+
