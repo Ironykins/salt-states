@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Austhaus</title>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:auto;
+    float:left;
+    padding:10px;	      
+    margin:10px;
+}
+#section {
+    width:700px;
+    padding:10px;	 	 
+    margin:10px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<img src="f0x0rz184.png"/>
+<h1>The Austhaus</h1>
+<small>[Mutexes and Metaphors]</small>
+</div>
+
+<div id="nav">
+<b>Links</b><br/>
+<a href="http://austhaus.com">Austhaus Server</a><br/>
+<a href="http://router.austhaus.com">Main Router</a><br/>
+<a href="http://garage.austhaus.com">Garage Router</a><br/>
+<a href="http://printer.austhaus.com">Printer Webpage</a><br/>
+<a href="http://austhaus.com/torrent">Torrent Interface</a><br/>
+</div>
+
+<div id="section">
+<h2>Austhaus Intranet</h2>
+<p>
+This is the Austhaus intranet portal. This page is just a collection of links to the internal parts of the network. 
+</p>
+<p>
+The main server (austhaus.com) acts as the network's DNS, webserver, torrent seedbox, and NAS store. 
+</p>
+<p>
+The Network Attached Storage is Samba driven. Most windows systems should be able to explore it (Start -> Network).
+
+You can also manually navigate to a samba share by opening your file browser and typing in "\\austhaus.com\<share name>"
+</p>
+<p>Valid share names are:</p>
+<ul>
+<li><b>share</b> - Shared folder, open to all</li>
+<li><b>music</b> - Music folder, read-only access.</li>
+<li><b>downloads</b> - This is where downloaded torrents are placed</li>
+<li><b>media</b> - Movies, books, TV shows, etc</li>
+<li><b>family</b> - Family photos and videos. Requires login from a family account</li>
+</ul>
+<p>You can also use your username as a share name, provided you have an account on the austhaus.com server. You must log in using your UNIX username and password to use this share, and it is accessible only to you. (eg. "\\austhaus\konrad" points to konrad's personal share.)
+</div>
+<div id="footer">
+Layout Copyright (c) W3Schools.com
+</div>
+
+</body>
+</html>
+

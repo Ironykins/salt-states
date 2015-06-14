@@ -9,5 +9,6 @@ file_roots:
     base:
         - /srv/salt/base
         - /srv/salt/users-formula
+        - /srv/salt/apache-formula
         - /srv/salt/samba-formula
         

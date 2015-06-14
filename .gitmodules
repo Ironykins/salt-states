@@ -4,3 +4,6 @@
 [submodule "samba-formula"]
 	path = samba-formula
 	url = https://github.com/saltstack-formulas/samba-formula
+[submodule "apache-formula"]
+	path = apache-formula
+	url = https://github.com/saltstack-formulas/apache-formula
