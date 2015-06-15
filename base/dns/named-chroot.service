@@ -1,0 +1,11 @@
+[Unit]
+Description=Bind9 DNS Server
+After=network.target
+
+[Service]
+ExecStart=/usr/sbin/named -4 -f -u bind -t "/chroot/bind"
+ExecReload=/usr/sbin/rndc reload
+ExecStop=/usr/sbin/rndc stop
+
+[Install]
+WantedBy=multi-user.target

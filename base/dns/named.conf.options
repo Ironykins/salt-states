@@ -1,0 +1,13 @@
+options {
+	dnssec-validation auto;
+
+	auth-nxdomain no;    # conform to RFC1035
+	listen-on-v6 { any; };
+	forwarders {
+		8.8.8.8;
+		8.8.4.4;
+	};
+
+	allow-transfer { none; };
+};
+
