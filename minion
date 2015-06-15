@@ -11,4 +11,5 @@ file_roots:
         - /srv/salt/users-formula
         - /srv/salt/apache-formula
         - /srv/salt/samba-formula
+        - /srv/salt/openssh-formula
         

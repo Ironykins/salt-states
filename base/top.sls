@@ -1,6 +1,7 @@
 base:
     '*':
         - users
+        - users.sudo
         - vim
         - ddate
         - figlet
@@ -12,6 +13,7 @@ base:
         - fortune
         - htop
         - homeshick
+        - openssh.client
     server:
         - motd
         - deluge
@@ -21,3 +23,5 @@ base:
         - apache-copysite
         - apache.debian_full
         - dns
+        - openssh
+        - openssh.config

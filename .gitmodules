@@ -7,3 +7,6 @@
 [submodule "apache-formula"]
 	path = apache-formula
 	url = https://github.com/saltstack-formulas/apache-formula
+[submodule "openssh-formula"]
+	path = openssh-formula
+	url = https://github.com/saltstack-formulas/openssh-formula
