@@ -6,7 +6,6 @@ base:
         - ddate
         - figlet
         - git
-        - subversion
         - cowsay
         - gcc
         - ghc
