@@ -7,6 +7,7 @@ nas:
     - addusers:
         - nas
 
+# Make all the dirs.
 {% for sharename, details in pillar['samba_dirs'].iteritems() %}
 
 {{sharename}}:
@@ -15,5 +16,16 @@ nas:
     - user: nas
     - group: nas
     - mode: {{ details['mode'] }}
+
+{% endfor %}
+
+# Make personal samba dirs.
+{% for username, details in pillar['users'].iteritems() %}
+
+/home/{{username}}/file:
+  file.directory:
+    - user: {{username}}
+    - group: {{username}}
+    - mode: 700
 
 {% endfor %}
