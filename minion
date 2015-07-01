@@ -1,6 +1,6 @@
 master: localhost
 file_client: local
-id: server
+id: server-vagrant
 
 grains:
     informal_name: "Vagrant Box" 

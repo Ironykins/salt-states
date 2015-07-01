@@ -13,7 +13,7 @@ base:
         - htop
         - homeshick
         - openssh.client
-    server:
+    'server-*':
         - motd
         - deluge
         - samba
