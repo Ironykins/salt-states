@@ -16,8 +16,8 @@ base:
     server:
         - motd
         - deluge
-        - samba_dirs
         - samba
+        - samba_dirs
         - samba.config
         - apache-copysite
         - apache.debian_full

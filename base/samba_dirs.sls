@@ -21,6 +21,7 @@ nas:
 
 # Make personal samba dirs.
 {% for username, details in pillar['users'].iteritems() %}
+{% if 'samba' in details %}
 
 /home/{{username}}/file:
   file.directory:
@@ -28,4 +29,12 @@ nas:
     - group: {{username}}
     - mode: 700
 
+# If they're not samba users, turn them into samba users.
+samba_{{username}}:
+  cmd.run:
+    - name: smbpasswd -a -n {{username}} 
+    - onlyif: "[ $( pdbedit -L | grep -c ^{{username}}: ) -eq 0 ]"
+
+{% endif %}
 {% endfor %}
+
