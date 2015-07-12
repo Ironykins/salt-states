@@ -14,10 +14,27 @@ These are provided publicly in hopes that others attempting to use salt to set u
 I use some premade saltstack formulas as found [here](https://github.com/saltstack-formulas).
 The repositories for these formulas are submoduled, since masterless salt setups do not yet support gitfs.
 
-I have not tested these states extensively, and they are provided with no warranty or license. Steal them. Pee on them. Butcher them into some frankenstein monster. 
+I have not tested these states extensively. I'm currently using them to provision my home server, and plan to use them to manage all my computers. 
 
-TODO:
-* Pillar examples for existing configs
+This repo is provided under the [wtf public license](http://www.wtfpl.net).
+
+# TODO
 * OpenVPN Server
+* Tunnel Deluge traffic over a VPN
 * NFS Setup
 * PXE Boot Server
+* OpenSSH Key Management
+
+# DONE
+* Apache Webserver
+* BIND9 DNS Server
+* OpenSSH Server
+* Samba NAS
+* User Management
+* Deluge Torrent Client and Web Interface
+* [Homeshick](https://github.com/andsens/homeshick)
+* Fortune (With additional databases of quotes from Discworld, Calvin and Hobbes, and Hitchhiker's Guide to the Galaxy)
+* Figlet (With a large collection of extra fonts)
+* A server MOTD, with a title generated from a grain called 'informal_name'
+* Some frequently used packages (cowsay, ddate, gcc, ghc, git, htop, and vim)
+
