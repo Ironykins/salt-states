@@ -1,11 +1,13 @@
 # Ensure the NAS user is present, and owns the dirs. 
-nas:
+nas-account:
+  group.present:
+    - name: nas
   user.present:
+    - name: nas
     - home: /home/nas
     - system: True
-  group.present:
-    - addusers:
-        - nas
+    - groups:
+      - nas
 
 # Make all the dirs.
 {% for sharename, details in pillar['samba_dirs'].iteritems() %}
