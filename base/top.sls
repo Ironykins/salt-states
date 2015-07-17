@@ -25,3 +25,4 @@ base:
         - openssh
         - openssh.config
         - openvpn_client
+        - deluge-interface-bind
