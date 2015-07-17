@@ -19,11 +19,11 @@ I have not tested these states extensively. I'm currently using them to provisio
 This repo is provided under the [wtf public license](http://www.wtfpl.net).
 
 # TODO
-* OpenVPN Server
-* Tunnel Deluge traffic over a VPN
 * NFS Setup
 * PXE Boot Server
 * OpenSSH Key Management
+* OpenVPN Server (Maybe)
+* Linux Desktop Configuration (Maybe)
 
 # DONE
 * Apache Webserver
@@ -31,7 +31,9 @@ This repo is provided under the [wtf public license](http://www.wtfpl.net).
 * OpenSSH Server
 * Samba NAS
 * User Management
+* OpenVPN Client with split routing
 * Deluge Torrent Client and Web Interface
+* Tunnel Deluge traffic over a VPN
 * [Homeshick](https://github.com/andsens/homeshick)
 * Fortune (With additional databases of quotes from Discworld, Calvin and Hobbes, and Hitchhiker's Guide to the Galaxy)
 * Figlet (With a large collection of extra fonts)
