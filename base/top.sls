@@ -24,3 +24,4 @@ base:
         - dns
         - openssh
         - openssh.config
+        - openvpn_client
