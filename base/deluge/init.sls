@@ -2,13 +2,15 @@
 # Adapted from the official systemd tutorial here:
 # http://dev.deluge-torrent.org/wiki/UserGuide/Service/systemd
 
-deluge:
-  user.present: 
+deluge-account:
+  group.present:
+    - name: nas
+  user.present:
+    - name: deluge
     - home: /var/lib/deluge
     - system: True
-  group.present:
-    - addusers:
-        - deluge
+    - groups:
+      - nas
 
 deluged_pkg:
   pkg.installed:
