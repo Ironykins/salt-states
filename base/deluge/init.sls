@@ -12,6 +12,14 @@ deluge-account:
     - groups:
       - nas
 
+nas-ownership:
+  user.present: 
+    - name: nas
+    - home: /home/nas
+    - system: True
+    - groups:
+      - deluge
+
 deluged_pkg:
   pkg.installed:
     - name: deluged
