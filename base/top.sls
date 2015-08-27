@@ -16,10 +16,10 @@ base:
         - openssh.client
     'server-*':
         - motd
-        - deluge
         - samba
         - samba_dirs
         - samba.config
+        - deluge
         - apache-copysite
         - apache.debian_full
         - dns

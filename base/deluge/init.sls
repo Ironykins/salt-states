@@ -2,6 +2,12 @@
 # Adapted from the official systemd tutorial here:
 # http://dev.deluge-torrent.org/wiki/UserGuide/Service/systemd
 
+nas-ownership:
+  user.present: 
+    - name: nas
+    - home: /home/nas
+    - system: True
+    
 deluge-account:
   group.present:
     - name: nas
@@ -11,14 +17,6 @@ deluge-account:
     - system: True
     - groups:
       - nas
-
-nas-ownership:
-  user.present: 
-    - name: nas
-    - home: /home/nas
-    - system: True
-    - groups:
-      - deluge
 
 deluged_pkg:
   pkg.installed:

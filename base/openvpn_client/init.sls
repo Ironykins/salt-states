@@ -10,6 +10,7 @@ echo 1 vpn >> /etc/iproute2/rt_tables:
     - mode: 600
     - user: root
     - group: root
+    - makedirs: True
 
 # Startup script for routing. Specified in client.conf
 /etc/openvpn/upscript.sh:
@@ -18,6 +19,7 @@ echo 1 vpn >> /etc/iproute2/rt_tables:
     - mode: 700
     - user: root
     - group: root
+    - makedirs: True
 
 # My VPN uses credentials. Store them in a file here.
 /etc/openvpn/credentials:
@@ -26,6 +28,7 @@ echo 1 vpn >> /etc/iproute2/rt_tables:
     - mode: 700
     - user: root
     - group: root
+    - makedirs: True
 
 openvpn:
   pkg.installed: []
