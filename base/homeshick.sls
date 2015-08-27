@@ -10,7 +10,6 @@ install_{{username}}:
     - require:
       - pkg: git
     - user: {{username}}
-    - group: {{username}}
 
 clone_{{username}}:
   cmd.run:

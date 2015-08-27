@@ -1,5 +1,6 @@
 base:
     '*':
+        - zsh
         - users
         - users.sudo
         - vim
