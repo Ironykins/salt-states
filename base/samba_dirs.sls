@@ -1,4 +1,4 @@
-# Ensure the NAS user is present, and owns the dirs. 
+# Ensure the NAS user is present, and owns the dirs.
 nas-account:
   group.present:
     - name: nas
@@ -34,7 +34,7 @@ nas-account:
 # If they're not samba users, turn them into samba users.
 samba_{{username}}:
   cmd.run:
-    - name: smbpasswd -a -n {{username}} 
+    - name: smbpasswd -a -n {{username}}
     - onlyif: "[ $( pdbedit -L | grep -c ^{{username}}: ) -eq 0 ]"
 
 {% endif %}
