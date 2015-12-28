@@ -27,3 +27,4 @@ base:
         - openssh.config
         - openvpn_client
         - deluge-interface-bind
+        - ympd

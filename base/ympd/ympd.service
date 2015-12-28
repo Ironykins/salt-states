@@ -1,0 +1,16 @@
+[Unit]
+Description=YMPD Web Interface for Music Player Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=ympd
+Group=ympd
+UMask=007
+
+ExecStart=/usr/local/bin/ympd 
+
+TimeoutStopSec=300
+
+[Install]
+WantedBy=multi-user.target
