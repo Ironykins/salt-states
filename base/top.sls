@@ -14,6 +14,8 @@ base:
         - htop
         - homeshick
         - openssh.client
+    'client-*':
+        - desktop-env
     'server-*':
         - motd
         - samba
